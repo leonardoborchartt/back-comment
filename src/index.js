@@ -45,3 +45,5 @@ app.get('/comment', async (req, res) => {
     const comment = await Comment.find();
     return res.json(comment);
 });
+
+app.listen(process.env.PORT || 3331);
